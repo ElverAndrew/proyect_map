@@ -1,14 +1,12 @@
 function initMap() {
-  // Coordenadas (ejemplo: Piura, Perú)
+
   const lugar = { lat: -5.1914, lng: -80.5897 };
 
-  // Crear el mapa centrado en "lugar"
   const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 16,
+    zoom: 16.5,
     center: lugar,
   });
 
-  // Crear un marcador personalizado con SVG (rectángulo + flecha)
   const marker = new google.maps.Marker({
     position: lugar,
     map: map,
@@ -30,10 +28,9 @@ function initMap() {
           <polygon points="47,40 53,40 50,70" fill="skyblue"/>
         </svg>
       `),
-      scaledSize: new google.maps.Size(100, 70) // más alto por la flecha
+      scaledSize: new google.maps.Size(100, 70)
     }
   });
 }
 
-// Inicializar el mapa al cargar la página
 window.onload = initMap;
