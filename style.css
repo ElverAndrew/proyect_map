@@ -17,10 +17,22 @@ header {
 
 header h1 {
   margin: 0;
-  font-size: clamp(1.5rem, 4vw, 2.5rem); /* título responsive */
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
 }
 
-/* El mapa ocupa el resto de la pantalla */
+/* El mapa ocupa el resto */
 #map {
   flex: 1 1 auto;
+  position: relative;
+}
+
+/* Rosa de los vientos */
+.rosa-vientos {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  width: 80px;    /* tamaño pequeño */
+  height: auto;
+  opacity: 0.85;  /* un poco transparente */
+  pointer-events: none; /* no bloquea clics en el mapa */
 }
