@@ -22,7 +22,7 @@ function initMap() {
           <text x="50%" y="25" 
                 font-size="14" font-family="Arial" font-weight="bold"
                 text-anchor="middle" 
-                fill="white">Mi Casa</text>
+                fill="white">Casa de Joshua</text>
           
           <!-- Flecha más larga y fina -->
           <polygon points="47,40 53,40 50,70" fill="skyblue"/>
