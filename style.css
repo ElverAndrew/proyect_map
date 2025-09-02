@@ -36,3 +36,14 @@ header h1 {
   opacity: 0.85;  /* un poco transparente */
   pointer-events: none; /* no bloquea clics en el mapa */
 }
+
+/* Escala del mapa */
+.escala-mapa {
+  position: absolute;
+  bottom: 15px;
+  left: 110px;  /* Un poco a la derecha de la rosa */
+  width: 120px; /* Más larga que la rosa */
+  height: auto;
+  opacity: 0.85;
+  pointer-events: none;
+}
