@@ -10,7 +10,7 @@ function initMap() {
   const marker = new google.maps.Marker({
     position: lugar,
     map: map,
-    title: "Mi Casa",
+    title: "Casa de Joshua",
     icon: {
       url: "data:image/svg+xml;charset=UTF-8," + encodeURIComponent(`
         <svg xmlns="http://www.w3.org/2000/svg" width="100" height="70">
