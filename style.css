@@ -2,9 +2,25 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
+/* Encabezado */
+header {
+  background: skyblue;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  flex: 0 0 auto;
+}
+
+header h1 {
+  margin: 0;
+  font-size: clamp(1.5rem, 4vw, 2.5rem); /* título responsive */
+}
+
+/* El mapa ocupa el resto de la pantalla */
 #map {
-  width: 100%;
-  height: 100%;
+  flex: 1 1 auto;
 }
