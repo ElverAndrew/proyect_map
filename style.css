@@ -26,11 +26,11 @@ header h1 {
   position: relative;
 }
 
-/* .rosa-vientos {
+.rosa-vientos {
   position: absolute;
   bottom: 15px;
   left: 15px;
-  width: 80px; 
+  width: 140px; 
   height: auto;
   opacity: 0.85;
   pointer-events: none; 
@@ -39,29 +39,19 @@ header h1 {
 .escala-mapa {
   position: absolute;
   bottom: 15px;
-  left: 110px; 
-  width: 120px;
+  left: 180px; 
+  width: 180px;
   height: auto;
   opacity: 0.85;
   pointer-events: none;
-} */
+}
 
-    /* Contenedor de imágenes en la esquina inferior izquierda */
-.map-images {
+.legend {
     position: absolute;
-    bottom: 10px;
-    left: 10px;
-    display: flex;
-    flex-direction: column; /* para que queden una arriba de otra */
-    align-items: flex-start;
-    gap: 5px; /* separación entre imágenes */
-}
-
-.map-images img {
-    max-width: 80px; /* ajusta tamaño regular */
+    bottom: 180px;
+    left: 15px;
+    width: 140px;
     height: auto;
-}
-
-.map-images img.scale {
-    max-width: 100px; /* la escala un poco más larga */
+    opacity: 0.85;
+    pointer-events: none;
 }
