@@ -26,24 +26,42 @@ header h1 {
   position: relative;
 }
 
-/* Rosa de los vientos */
-.rosa-vientos {
+/* .rosa-vientos {
   position: absolute;
   bottom: 15px;
   left: 15px;
-  width: 80px;    /* tamaño pequeño */
+  width: 80px; 
   height: auto;
-  opacity: 0.85;  /* un poco transparente */
-  pointer-events: none; /* no bloquea clics en el mapa */
+  opacity: 0.85;
+  pointer-events: none; 
 }
 
-/* Escala del mapa */
 .escala-mapa {
   position: absolute;
   bottom: 15px;
-  left: 110px;  /* Un poco a la derecha de la rosa */
-  width: 120px; /* Más larga que la rosa */
+  left: 110px; 
+  width: 120px;
   height: auto;
   opacity: 0.85;
   pointer-events: none;
+} */
+
+    /* Contenedor de imágenes en la esquina inferior izquierda */
+.map-images {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    flex-direction: column; /* para que queden una arriba de otra */
+    align-items: flex-start;
+    gap: 5px; /* separación entre imágenes */
+}
+
+.map-images img {
+    max-width: 80px; /* ajusta tamaño regular */
+    height: auto;
+}
+
+.map-images img.scale {
+    max-width: 100px; /* la escala un poco más larga */
 }
